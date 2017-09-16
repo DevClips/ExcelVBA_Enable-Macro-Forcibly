@@ -79,8 +79,6 @@ Private Sub Workbook_AfterSave(ByVal Success As Boolean)
     
     '
     If Success Then
-        'unprotect book
-        ThisWorkbook.Unprotect PWD
         
         'show macrosecurity sheet
         wsMacroSecurity.Visible = xlSheetVisible
